@@ -1,0 +1,11 @@
+/* Vanity Jam: the drawer's own evening, cocoa and plum, with the blush of its lipsticks as the glow.
+   Only colour tokens live here; layout comes from the shared kk.css. */
+:root {
+  --dusk-0: #1b1217;
+  --dusk-1: #28171f;
+  --dusk-2: #3d2130;
+  --plum: #5a2e3c;
+  --glow: rgba(242, 170, 186, 0.32);
+  --accent: #f4b3c2;
+  --teal: #a9dcc0;
+}
