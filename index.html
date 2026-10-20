@@ -2,54 +2,147 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Vanity Jam</title>
 <meta name="description" content="Tidy the messiest makeup drawer: a calm 3D sorting puzzle for iPhone, by Kettlekite.">
-<meta name="theme-color" content="#1b1217">
+<meta name="theme-color" content="#1a0f15">
+<meta property="og:title" content="Vanity Jam">
+<meta property="og:description" content="Tidy the messiest makeup drawer: a calm 3D sorting puzzle for iPhone.">
+<meta property="og:image" content="https://vanityjam.kettlekite.com/assets/media/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/icon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/icon.png">
 <link rel="preload" href="/assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
 <link rel="stylesheet" href="/assets/kk.css">
+<link rel="stylesheet" href="/assets/game.css">
 <link rel="stylesheet" href="/assets/theme.css">
 </head>
 <body>
-<header class="wrap bar">
-  <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="36" height="36">Vanity Jam</a>
+<header class="bar">
+  <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="34" height="34">Vanity Jam</a>
   <nav class="nav" aria-label="Site">
+    <a href="#how">How it plays</a>
+    <a href="#drawer">The drawer</a>
     <a href="/support">Support</a>
-    <a href="/privacy">Privacy</a>
   </nav>
 </header>
 
 <main>
-  <section class="wrap hero">
-    <div>
-      <h1>Tidy the messiest makeup drawer.</h1>
-      <p class="lede">A calm 3D sorting puzzle for iPhone. Tap a lipstick, a brush or a palette and it flies into its organiser box.</p>
-      <div class="actions">
-        <span class="pill ghost">Coming soon to the App Store</span>
-        <a href="/support">Get help</a>
+  <section class="g-hero">
+    <h1 class="g-name">Vanity Jam</h1>
+    <div class="g-scene" aria-hidden="true">
+      <img class="float" src="/assets/media/items/scrunchie_butter.webp" alt="" style="--x:5%;--y:30%;--w:7%;--d:1.8;--r:-18deg">
+      <img class="float" src="/assets/media/items/lipstick_pink.webp" alt="" style="--x:24%;--y:44%;--w:4.4%;--d:1.4;--r:-16deg">
+      <img class="float" src="/assets/media/items/palette_pink.webp" alt="" style="--x:9%;--y:56%;--w:12%;--d:1.1;--r:-10deg">
+      <img class="float" src="/assets/media/items/clip_coral.webp" alt="" style="--x:30%;--y:63%;--w:7.5%;--d:1.5;--r:20deg">
+      <img class="float" src="/assets/media/items/gloss_coral.webp" alt="" style="--x:36%;--y:43%;--w:2.4%;--d:0.6;--r:26deg">
+      <img class="float" src="/assets/media/items/compact_pink.webp" alt="" style="--x:63%;--y:42%;--w:9%;--d:0.8;--r:14deg">
+      <img class="float" src="/assets/media/items/jar_sage.webp" alt="" style="--x:85%;--y:30%;--w:8.5%;--d:1.6;--r:6deg">
+      <img class="float" src="/assets/media/items/dryer_lavender.webp" alt="" style="--x:70%;--y:60%;--w:13%;--d:0.9;--r:12deg">
+      <img class="float" src="/assets/media/items/mask_pink.webp" alt="" style="--x:88%;--y:50%;--w:7%;--d:0.7;--r:-8deg">
+      <img class="float" src="/assets/media/items/brush_peach.webp" alt="" style="--x:61%;--y:72%;--w:3.6%;--d:1.2;--r:-34deg">
+    </div>
+    <div class="g-device"><div class="phone"><video src="/assets/media/demo.mp4" poster="/assets/media/sort.jpg" autoplay muted loop playsinline aria-label="A level of Vanity Jam being played"></video></div></div>
+    <div class="g-copy wrap">
+      <div>
+        <p class="g-lede">Tidy the messiest makeup drawer.</p>
+        <p class="g-sub">A calm 3D sorting puzzle for iPhone.</p>
+      </div>
+      <div class="g-cta">
+        <div class="actions"><span class="btn soon">Coming soon to the App Store</span></div>
+        <a class="help" href="/support">Get help</a><br>
+        <a class="studio-mark" href="https://kettlekite.com"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 3 L56 26 L32 61 Z" fill="#5fa59a"/><path d="M32 3 L8 26 L32 61 Z" fill="#f0a92e"/></svg>A Kettlekite game</a>
       </div>
     </div>
-    <div class="stage">
-      <div class="phone"><img src="/assets/level.jpg" alt="Level 44 of Vanity Jam: a cluttered drawer of makeup and hair tools above three organiser boxes and a holding tray." width="660" height="1434"></div>
+  </section>
+
+  <section class="g-section wrap" id="how" aria-labelledby="how-title">
+    <div class="g-head rise">
+      <h2 id="how-title">How it plays</h2>
+      <p>Three rules, no timers. Play at your own pace.</p>
+    </div>
+    <ol class="beats">
+      <li class="beat rise" style="--tilt:-2deg"><div class="shot"><img src="/assets/media/sort.jpg" alt="A drawer of makeup and hair tools above three organiser boxes marked Hair, Skincare and Makeup." loading="lazy"></div>
+        <h3>Tap to sort</h3><p>Tap a lipstick, a cream or a hair dryer and it flies to its box: Hair, Skincare or Makeup.</p></li>
+      <li class="beat rise" style="--tilt:1.5deg"><div class="shot"><img src="/assets/media/peek.jpg" alt="A crowded drawer with the press-and-hold peek button at the top left." loading="lazy"></div>
+        <h3>Top comes first</h3><p>Anything lying on top has to go before what's under it. Press and hold an item to look underneath.</p></li>
+      <li class="beat rise" style="--tilt:-1deg"><div class="shot"><img src="/assets/media/tray.jpg" alt="The five-slot holding tray under the boxes, partly filled." loading="lazy"></div>
+        <h3>Mind the tray</h3><p>Items no box wants yet wait in a five-slot tray. Let it fill up and the drawer wins this one.</p></li>
+    </ol>
+  </section>
+
+  <section class="g-section wrap" id="drawer" aria-labelledby="drawer-title">
+    <div class="g-head rise">
+      <h2 id="drawer-title">Twenty real products, three boxes.</h2>
+      <p>Each one is modelled from a real product, printed labels and all, so you can tell where it goes at a glance.</p>
+    </div>
+    <div class="shelf">
+      <section class="rise" aria-labelledby="box-hair"><h3 id="box-hair">Hair</h3>
+        <ul class="items">
+          <li><img src="/assets/media/items/dryer_butter.webp" alt="" loading="lazy">Hair dryer</li>
+          <li><img src="/assets/media/items/flatiron_pink.webp" alt="" loading="lazy">Flat iron</li>
+          <li><img src="/assets/media/items/hairbrush_lavender.webp" alt="" loading="lazy">Hair brush</li>
+          <li><img src="/assets/media/items/comb_coral.webp" alt="" loading="lazy">Comb</li>
+          <li><img src="/assets/media/items/clip_coral.webp" alt="" loading="lazy">Claw clip</li>
+          <li><img src="/assets/media/items/pins_lavender.webp" alt="" loading="lazy">Bobby pins</li>
+          <li><img src="/assets/media/items/scrunchie_butter.webp" alt="" loading="lazy">Scrunchie</li>
+        </ul>
+      </section>
+      <section class="rise" aria-labelledby="box-skin"><h3 id="box-skin">Skincare</h3>
+        <ul class="items">
+          <li><img src="/assets/media/items/jar_sage.webp" alt="" loading="lazy">Hydra cream</li>
+          <li><img src="/assets/media/items/eyecream_sage.webp" alt="" loading="lazy">Eye cream</li>
+          <li><img src="/assets/media/items/retinol_lavender.webp" alt="" loading="lazy">Retinol serum</li>
+          <li><img src="/assets/media/items/sunscreen_butter.webp" alt="" loading="lazy">Sunscreen</li>
+          <li><img src="/assets/media/items/roller_sage.webp" alt="" loading="lazy">Jade roller</li>
+          <li><img src="/assets/media/items/mask_pink.webp" alt="" loading="lazy">Sheet mask</li>
+        </ul>
+      </section>
+      <section class="rise" aria-labelledby="box-makeup"><h3 id="box-makeup">Makeup</h3>
+        <ul class="items">
+          <li><img src="/assets/media/items/lipstick_pink.webp" alt="" loading="lazy">Lipstick</li>
+          <li><img src="/assets/media/items/gloss_coral.webp" alt="" loading="lazy">Lip gloss</li>
+          <li><img src="/assets/media/items/mascara_caramel.webp" alt="" loading="lazy">Mascara</li>
+          <li><img src="/assets/media/items/palette_pink.webp" alt="" loading="lazy">Eyeshadow palette</li>
+          <li><img src="/assets/media/items/compact_pink.webp" alt="" loading="lazy">Compact powder</li>
+          <li><img src="/assets/media/items/brush_peach.webp" alt="" loading="lazy">Makeup brush</li>
+          <li><img src="/assets/media/items/sponge_peach.webp" alt="" loading="lazy">Beauty sponge</li>
+        </ul>
+      </section>
     </div>
   </section>
 
-  <section class="wrap section split">
-    <h2>How it plays</h2>
-    <div class="body">
-      <p>Hair tools go to Hair, jars and tubes to Skincare, colour to Makeup. Anything lying on top has to go first; press and hold an item to see what's underneath. Items no box wants yet wait in a five-slot holding tray, so don't let it fill up.</p>
-      <p>200 levels, from relaxing to truly tricky, and every one is guaranteed solvable. No timers: play at your own pace.</p>
+  <section class="g-section levels" id="levels" aria-labelledby="levels-title">
+    <div class="wrap">
+      <div class="g-head rise">
+        <h2 id="levels-title">Two hundred levels.</h2>
+        <p>Small drawers to start, then deeper piles, with hard and super-hard levels and calm ones in between. Every level is checked solvable before it ships.</p>
+      </div>
+    </div>
+    <div class="strip" aria-label="Screens from levels across the game">
+      <figure><img src="/assets/media/dense.jpg" alt="Level 71, a dense drawer." loading="lazy"></figure>
+      <figure><img src="/assets/media/l044.jpg" alt="Level 44." loading="lazy"></figure>
+      <figure><img src="/assets/media/win.jpg" alt="Level complete, three stars." loading="lazy"></figure>
+      <figure><img src="/assets/media/l096.jpg" alt="Level 96." loading="lazy"></figure>
+      <figure><img src="/assets/media/boosters.jpg" alt="Level 95 with boosters at the bottom." loading="lazy"></figure>
+      <figure><img src="/assets/media/l121.jpg" alt="Level 121." loading="lazy"></figure>
+      <figure><img src="/assets/media/l171.jpg" alt="Level 171." loading="lazy"></figure>
     </div>
   </section>
 
-  <section class="wrap section split">
-    <h2>For parents</h2>
-    <div class="body">
-      <p><strong>No account, no ads and no analytics.</strong> Progress stays on the iPhone. Purchases go through the App Store. The <a href="/privacy">privacy policy</a> has the details.</p>
+  <section class="g-section wrap" aria-labelledby="calm-title">
+    <div class="calm rise">
+      <h2 id="calm-title">Nothing to sign up for.</h2>
+      <div>
+        <p>No account, no ads and no tracking. Your progress stays on your iPhone, and purchases go through the App Store.</p>
+        <p><a href="/privacy">Read the privacy policy</a></p>
+      </div>
     </div>
+    <a class="sister rise" href="https://sundaejam.kettlekite.com">
+      <img src="/assets/media/sundae-icon.png" alt="" width="72" height="72">
+      <span><strong>Sundae Jam</strong><span>Its sister game clears a jammed dessert counter instead.</span></span>
+    </a>
   </section>
 </main>
 
@@ -63,5 +156,6 @@
     </ul>
   </div>
 </footer>
+<script src="/assets/game.js" defer></script>
 </body>
 </html>
